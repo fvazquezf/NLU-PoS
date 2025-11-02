@@ -31,6 +31,7 @@ However it is also compatible with previous versions of tensorflow that run with
     * `EnglishPosTagger.ipynb`
     * `SpanishPosTagger.ipynb`
     * `ItalianPosTagger.ipynb`
+* `html folder`: A folder with the results of running each notebook are also provided as example.
 * `Datasets`: Datasets for each languages:
     * `UD_English-EWT-master`
     * `UD_Italian-VIT-master`
