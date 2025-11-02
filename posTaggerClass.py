@@ -126,23 +126,27 @@ class PosTagger:
         
     def plot(self, history):
             """Plot training ,validation loss and accuracy."""
-
             plt.figure(figsize=(12, 5))
-
             plt.subplot(1, 2, 1)
-            plt.plot(history.history["loss"], label="Train Loss")
+            plt.grid(True, linestyle='-.', alpha=0.3)
+            plt.plot(history.history["loss"], '--x',label="Train Loss")
             if "val_loss" in history.history:
-                plt.plot(history.history["val_loss"], label="Val Loss")
+                plt.plot(history.history["val_loss"],'--x', label="Val Loss")
             plt.title("Loss over epochs")
             plt.xlabel("Epoch")
             plt.ylabel("Loss")
             plt.legend()
 
             plt.subplot(1, 2, 2)
+            plt.grid(True, linestyle='-.', alpha=0.3)
             if "masked_accuracy" in history.history:
-                plt.plot(history.history["masked_accuracy"], label="Train Acc")
+                plt.plot(history.history["masked_accuracy"],'--x',  label="Train Acc")
             if "val_masked_accuracy" in history.history:
-                plt.plot(history.history["val_masked_accuracy"], label="Val Acc")
+                plt.plot(history.history["val_masked_accuracy"],'--x',  label="Val Acc")
+            if "accuracy" in history.history:
+                plt.plot(history.history["accuracy"], '--x', label="Train Acc")
+            if "val_accuracy" in history.history:
+                plt.plot(history.history["val_accuracy"],'--x', label="Val Acc")
             plt.title("Accuracy over epochs")
             plt.xlabel("Epoch")
             plt.ylabel("Accuracy")
@@ -150,5 +154,4 @@ class PosTagger:
 
             plt.tight_layout()
             plt.show()
-        
         
