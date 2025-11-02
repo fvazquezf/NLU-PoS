@@ -45,7 +45,7 @@ Souces for the  databases used in this project:
 
 
 ## How to Run the code.
-* Download the .zip project
+* Download the .zip project.
 * Run the docker image provided by the teaching staff.
 * Launch jupyter lab.
 * Open the notebook for the language of interest (spanish, english or italian).
