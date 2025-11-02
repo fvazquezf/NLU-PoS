@@ -1,5 +1,4 @@
-# (Practical Assignment 1 -
-Part-of-speech (PoS) Tagging)
+# Practical Assignment 1 - Part-of-speech (PoS) Tagging
 
 (Natural Language Understanding.
 Master in Artificial Intelligence 2025-2026)
