@@ -19,19 +19,14 @@ This project runs properly on the image provided by the teaching staff, wich use
 
 However it is also compatible with previous versions of tensorflow that run with Keras 2.
 
-
-
-## Datasets
-
-
 ## Project Structure:
 * `posTaggerClass.py`: The main class for creating the model with given parameters, training and evaluate.
 * `NLUutils.py`: Utils functions for data preprocessing, creating the models and testing. 
-* `notebooks/`: Jupyter notebooks for each language:
+*  Jupyter notebooks for each language:
     * `EnglishPosTagger.ipynb`
     * `SpanishPosTagger.ipynb`
     * `ItalianPosTagger.ipynb`
-* `html folder`: A folder with the results of running each notebook are also provided as example.
+* `html\`: A folder with the results of running each notebook are also provided as example.
 * `Datasets`: Datasets for each languages:
     * `UD_English-EWT-master`
     * `UD_Italian-VIT-master`
