@@ -25,7 +25,7 @@ However it is also compatible with previous versions of tensorflow that run with
 
 
 ## Project Structure:
-*`posTaggerClass.py`: The main class for creating the model with given parameters, training and evaluate.
+* `posTaggerClass.py`: The main class for creating the model with given parameters, training and evaluate.
 * `NLUutils.py`: Utils functions for data preprocessing, creating the models and testing. 
 * `notebooks/`: Jupyter notebooks for each language:
     * `EnglishPosTagger.ipynb`
